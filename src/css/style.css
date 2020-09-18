@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Ubuntu", sans-serif;
+    color: aqua;
+    background-color: #bbbbbb;
+  }
+
+.form-container{
+  background-color: rgb(231, 231, 231);
+  position: absolute;
+  left: 45%;
+  top: 30%;
+  transform: translate(-40%, -20%);
+  min-height: 400px;
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: wheat;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.add-container{
+    display: inline-block;
+    width: 100%;
+    text-align:center;
+    margin-top: 10px;    
+}
+
+.add-container .form-input{
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-right: 4px;
+    outline: none;
+}
+
+.add-container .btn {
+    padding: 11px 40px ;
+    background-color: coral;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.btn:hover .btn:active{
+    background-color: rgb(251, 108, 56);
+    outline: none;
+}
+
+.list-container{
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* ListItem component styling */
+.list-items  {
+    position: relative;
+    margin: 12px auto;
+    background-color: rgb(3, 32, 32);
+    width: 80%;
+    border-radius: 10px;
+    height: 40px;
+}
+
+.list-items p{
+    position: absolute; 
+}
+
+.list-items input {
+    background-color: transparent;
+    margin-top: 4px;
+    border: none;
+    color: thistle;
+    outline: none;
+    font-size: 20px;
+    margin-left: 10px ;
+    font-weight: bold;
+
+}
+
+.list-items i{
+        position: absolute;
+        margin-top: 10px;
+        right: 10px;
+        color: thistle;
+        cursor: pointer;
+        
+}
+
+/* responsive */
+@media only screen and (max-width: 400px) {
+    .form-container{
+        background-color: rgb(80, 43, 50);
+        float: left;
+        margin: 40px 450px;
+        min-height: 300px;
+        width: 100px;
+        border-radius: 15px;
+        box-shadow: wheat;
+      }
+      .add-container{
+        display: inline-block;
+        width: 50%;
+        text-align:center;
+        margin-top: 10px;    
+    }
+  }
